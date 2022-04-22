@@ -22,8 +22,9 @@ pip install -r requirements.txt
 
 ```
 python manage.py runserver
-
-#check,  http://127.0.0.1:8000/ or localhost:8000 to experience the app
+```
+```
+open http://127.0.0.1:8000/ in the browser to verify if app is successfully loaded
 ```
 
 
