@@ -15,6 +15,6 @@ pip install -r requirements.txt
 ### Download weights 
 
 <a href="https://drive.google.com/file/d/1_lgEMOGzvsdKGPhWWrWfDtr5bsuEQvxU/view?usp=sharing">Model CKPT</a>
-- Copy and paste the "genre_Weights" file into "movie_genre/genre_scan/src/" 
+- Copy and paste the **genre_Weights** file into **movie_genre/genre_scan/src/** 
 
 
