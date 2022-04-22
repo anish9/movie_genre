@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+        <div class="navigation">
+            <a href="{% url 'homepage'%}">Home</a>		
+        </div>
+        <link href="{% static 'genre_scan/base.css' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <div class="title">
+            <h1><span id="scan">Genre</span> Scan</h1>
+            <br>
+        </div>
+        <div class="summary">
+            <h3>Plot</h3>
+        </div>
+        {% if story %}
+        <p1>{{story}}</p1>
+        {% endif %}
+        <div class="summary">
+            <h3>Predictions From <span id="AI">Neural Net</span></h3>
+        </div>
+        {% if results %}
+        {% for r,re in results.items%}
+        <div class="pred">
+        <ul>
+            <li><p1>{{r}} : {{re}}</p1></li>
+        </ul>
+        </div>
+        {% endfor %}  
+        {% endif %}
+    </head>
+    
+
+</html>

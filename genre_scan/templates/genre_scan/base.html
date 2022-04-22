@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+    <head>
+        <link href="{% static 'genre_scan/base.css' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <div class="title">
+            <h1>Genre <span id="scan">Scan</span></h1>
+            <br>
+        </div>
+        <div class="summary">
+            <h3>Detect Movie Genre Powered by <span id="AI">Neural Nets</span></h3>
+        </div>
+        {% block content %}{% endblock %}
+        <div class="inputarea">
+            <form method="post">
+                <textarea name="textbox" rows="15" cols="110" placeholder="Enter The Plot or Storyline..."></textarea>
+                {% csrf_token %}
+                <br>
+            
+        </div>
+        <div class="predictbutton">
+            <input id='submit' type="submit" value="PREDICT">
+        </div>
+            </form>
+
+        <!-- {% if results %}
+        <p1>{{results}}</p1>
+        {% endif %} -->
+        
+    </head>
+
+    
+</html>
