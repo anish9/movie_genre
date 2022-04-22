@@ -18,3 +18,10 @@ pip install -r requirements.txt
 - Copy and paste the **genre_Weights** file into **movie_genre/genre_scan/src/** 
 
 
+### Running web app locally
+
+```
+python manage.py runserver
+```
+
+
